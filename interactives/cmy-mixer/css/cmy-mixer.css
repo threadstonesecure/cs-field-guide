@@ -1,6 +1,3 @@
-#interactive-cmy-mixer .noUi-pips {
-  padding-top: 5px;
-}
 #interactive-cmy-mixer-container {
   display: flex;
   justify-content: space-between;
@@ -27,13 +24,13 @@
 }
 
 /* CMY colours */
-#interactive-cmy-mixer-sliders > div:nth-child(1) > div.interactive-cmy-mixer-slider {
+#interactive-cmy-mixer-sliders > div:nth-child(1) div.noUi-connect {
 	background: cyan;
 }
-#interactive-cmy-mixer-sliders > div:nth-child(2) > div.interactive-cmy-mixer-slider {
+#interactive-cmy-mixer-sliders > div:nth-child(2) div.noUi-connect {
 	background: magenta;
 }
-#interactive-cmy-mixer-sliders > div:nth-child(3) > div.interactive-cmy-mixer-slider {
+#interactive-cmy-mixer-sliders > div:nth-child(3) div.noUi-connect {
 	background: yellow;
 }
 
