@@ -29,20 +29,19 @@ this.isGreyscale = false; // Global to keep track of whether greyscale is on
 
 // Names of images to be included in picture picker
 this.images = [
-  "coloured-roof-small.png",
-  "roof.jpg",
-  "alley.jpg",
-  "arnold.jpg",
-  "bike.jpg",
-  "boards.jpg",
-  "dark_clock.jpg",
-  "dark.jpg",
-  "fence.jpg",
-  "knight.png",
-  "roof.jpg",
-  "tuba.jpg",
-  "words_zoom.png",
-  "words.png",
+  pixel_viewer_images["small-roof"],
+  pixel_viewer_images["roof"],
+  pixel_viewer_images["alley"],
+  pixel_viewer_images["arnold"],
+  pixel_viewer_images["bike"],
+  pixel_viewer_images["boards"],
+  pixel_viewer_images["dark-clock"],
+  pixel_viewer_images["dark"],
+  pixel_viewer_images["fence"],
+  pixel_viewer_images["knight"],
+  pixel_viewer_images["tuba"],
+  pixel_viewer_images["words-zoom"],
+  pixel_viewer_images["words"],
 ]
 
 this.tiling = new Tiling;
@@ -54,8 +53,8 @@ $( document ).ready(function() {
     $('#pixel-viewer-interactive-original-image').attr('src', './img/' + getUrlParameter('image'))
     load_resize_image('./img/' + getUrlParameter('image'), false)
   } else {
-    $('#pixel-viewer-interactive-original-image').attr('src', './img/coloured-roof-small.png')
-    load_resize_image('./img/coloured-roof-small.png', false)
+    $('#pixel-viewer-interactive-original-image').attr('src', pixel_viewer_images["small-roof"])
+    load_resize_image(pixel_viewer_images["small-roof"], false)
   }
   if (getUrlParameter('mode') == 'threshold') {
     mode = 'threshold';
