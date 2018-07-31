@@ -1,0 +1,29 @@
+{% extends interactive_mode_template %}
+
+{% load i18n %}
+{% load static %}
+
+{% block html %}
+  <h4>{% trans "Frequency Analysis" %}</h4>
+  <div class="row">
+    <div class="col-sm-12 col-md-8 offset-md-2 mb-2">
+      <textarea placeholder="Enter some text" class="interactive-frequency-analysis form-control" id="interactive-frequency-analysis-input"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-8 offset-md-2 mb-3">
+      <button id="interactive-frequency-analysis-button" class="interactive-frequency-analysis btn btn-primary">
+        {% trans "Analyse!" %}
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-8 offset-md-2">
+      <canvas id="interactive-frequency-analysis-chart-display"></canvas>
+    </div>
+  </div>
+{% endblock html %}
+
+{% block js %}
+  <script type="text/javascript" src="{% static 'interactives/frequency-analysis/js/frequency-analysis.js' %}"></script>
+{% endblock js %}

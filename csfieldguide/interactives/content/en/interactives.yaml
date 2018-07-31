@@ -43,7 +43,7 @@ delay-analyser:
 delayed-checkbox:
   name: Delayed Checkbox
 frequency-analysis:
-  name: frequency-analysis (broken)
+  name: Frequency Analysis
 fsa-box:
   name: FSA Box
 fsa-light:
